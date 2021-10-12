@@ -1,0 +1,14 @@
+<apex:page standardController="Designation__c" title="Designation Page">
+
+ <apex:form >
+     
+ <apex:pageBlock title="Designation Information"><br/>
+ Position  Name : {!Designation__c.name}<br/>
+ Department Name:{!Designation__c.Department__c}<br/>
+ PayGrade:{!Designation__c.Pay_Grade__c }<br/>
+ Min pay:{!Designation__c.Min_Pay__c}<br/>
+ Max pay :{!Designation__c.Max_Pay__c }<br/>
+ </apex:pageBlock>
+     
+ </apex:form>
+</apex:page>

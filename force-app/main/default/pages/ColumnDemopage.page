@@ -1,0 +1,11 @@
+<apex:page standardController="Account" title="Account Page">
+    <apex:form >
+        <apex:pageBlock Title="Account Information"><br/>
+            You are viewing the Record of : {!Account.Name} <br/>
+            Sum of Amount : {!Account.Sum_of_amounts__c} <br/>
+            Sum of Expected Amount : {!Account.Sum_of_expected_revenue__c}<br/>
+                       
+        </apex:pageBlock>
+    
+    </apex:form>
+</apex:page>

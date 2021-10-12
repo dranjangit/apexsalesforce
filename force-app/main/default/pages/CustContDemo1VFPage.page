@@ -1,0 +1,3 @@
+<apex:page controller="CustContDemo1" sidebar="false" >
+    <apex:outputLabel >{!Name}</apex:outputLabel>
+</apex:page>

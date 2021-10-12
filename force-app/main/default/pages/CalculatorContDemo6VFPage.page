@@ -1,0 +1,20 @@
+<apex:page controller="CalculatorContDemo6" lightningStylesheets="true" standardStylesheets="false" sidebar="false" docType="html-5.0" applyBodyTag="False" applyHtmlTag="false" showHeader="false" >
+    <apex:form ><br/><br/>
+        <apex:pageBlock title="Calculator"> <br/><br/>
+        <apex:pageBlockSection columns="2" title="Arithmetic Operations" collapsible="false">
+           <apex:outputLabel >Enter X value : </apex:outputLabel><br/>
+            <apex:inputText value="{!x}"/><br/>
+            <apex:outputLabel >Enter Y value : </apex:outputLabel><br/>
+            <apex:inputText value="{!y}"/><br/>
+            
+            <apex:commandButton value="Addition" reRender="one" action="{!printSum}"/><br/><br/>
+             <apex:commandButton value="Substratcion" reRender="one" action="{!printSub}"/><br/><br/>
+            
+            <apex:outputLabel id="one"> You have successfully performed {!Operator} of {!x} and {!y} inputs. 
+            					And the Result is {!result}
+                
+                  </apex:outputLabel><br/><br/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+   </apex:form>
+</apex:page>

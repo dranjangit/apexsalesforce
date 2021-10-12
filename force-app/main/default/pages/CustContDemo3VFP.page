@@ -1,0 +1,14 @@
+<apex:page controller="CustContDemo3" >
+    <!--Name :{!Name} <br/><br/>
+    Branch : {!branch} <br/><br/>
+    College Name : {!college}<br/><br/>-->
+    <apex:form >
+        <apex:commandButton value="Click Here" action="{!Callme}"/> <br/><br/>
+    
+        Name of the Candidate : {!Name} <br/><br/>
+    	Branch : {!branch} <br/><br/>
+    	College Name : {!college}<br/><br/>
+    
+    </apex:form>
+    
+</apex:page>

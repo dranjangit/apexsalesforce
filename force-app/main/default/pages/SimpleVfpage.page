@@ -1,0 +1,11 @@
+<apex:page >
+    <h1>Hello Team "{!$User.Username}" here 
+    !! Welcome to VisualForce Page Concepts</h1><br/><br/>
+  <H1> Just let us write a small VFP code </H1> <BR/><BR/>
+  <P> Today's Date is {!Today()} </P><BR/><BR/>
+  <P> Next Week {!Today()+7} </P><BR/><BR/>
+  <P> The year today is {!Year(Today())} </P><BR/><BR/>
+  <P> Let's find a Maximum : {!MAX(77,98,876,5,85,54)}</P><BR/><BR/>
+  <P> The Square root of 49 is :{!SQRT(49)} </P><BR/><BR/>
+  <P> Is it true or false ? {!Contains('Salesforce.com','force.com')} </P><BR/><BR/>
+</apex:page>

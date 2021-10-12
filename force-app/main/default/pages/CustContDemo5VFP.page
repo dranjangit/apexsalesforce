@@ -1,0 +1,15 @@
+<!-- Refer CustContDemo5Page Class-->
+<apex:page controller="CustContDemo5">
+    <apex:form >
+        
+        <apex:outputLabel >Enter IPL Team Name : </apex:outputLabel> <br/><br/>
+        <apex:inputText value="{!IPLTeamName}"/> <br/><br/>
+        <apex:outputLabel >Location or City: </apex:outputLabel><br/><br/>
+        <apex:inputText value="{!location}"/> <br/><br/>
+        
+      
+        <apex:commandButton value="Click Here" reRender="one" action="{!printIPL}"/><br/><br/>
+        <apex:outputLabel id="one"> Wining Team is {!IPLTeamName} and City is {!location} </apex:outputLabel>
+        
+    </apex:form>
+</apex:page>

@@ -1,0 +1,24 @@
+<apex:page controller="CandidateCustomControler" >
+    <apex:form > <br/><br/>
+        <apex:pageBlock Title="Candidate Page">
+            
+            <apex:pageBlockSection Title="Candidate Section" columns="1" collapsible="false">
+                
+                <apex:panelGrid columns="2" border="1" bgcolor="green">
+                    <apex:outputLabel >Candidate Name: </apex:outputLabel>
+                    <apex:inputText value="{!Name}"></apex:inputText>
+                    <apex:outputLabel >Candidate Gender: </apex:outputLabel>
+                    <apex:inputText value="{!gender}"></apex:inputText>
+                    <apex:outputLabel >Candidate State/Province: </apex:outputLabel>
+                    <apex:inputText value="{!Province}"></apex:inputText>
+                </apex:panelGrid>
+                </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+            <apex:commandButton value="Save the Record" action="{!mySave}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        
+        
+        
+    </apex:form>
+</apex:page>

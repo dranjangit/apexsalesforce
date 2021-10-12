@@ -1,0 +1,9 @@
+<!-- Refer CustContParamDemo8 Class-->
+<apex:page controller="CustContParamDemo8" >
+    <apex:form >
+        <apex:outputLabel >Enter Name : </apex:outputLabel><br/>
+        <apex:inputText value="{!Name}"/><br/>
+        <apex:commandButton value="Click" rerender="one"/> <br/>
+        <apex:outputLabel id="one">Your Name is : {!Name}</apex:outputLabel>
+    </apex:form>
+</apex:page>

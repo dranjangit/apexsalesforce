@@ -1,0 +1,32 @@
+<apex:page sidebar="true" showHeader="true">
+<apex:form >
+    <apex:pageBlock Title="Salesforce Tutorials">
+        <apex:pageBlockSection title="VisualForce Page" collapsible="false">
+            <H1>
+                Visualforce pages are webpages that belong to Salesforce. These webpages are created using a unique tag-based Mark-up language.
+                It is similar to HTML but it's primary use is to access, display and update the organization's data. The
+                page is accessed by using a URL similar to that of a traditional webserver page.
+            </H1>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Declarative Approach" collapsible="true">
+            <H1>
+                Salesforce Flow provides declarative process automation for every Salesforce app, experience, and portal. Included in Salesforce
+                Flow are two point-and-click automation tools: Flow Builder, which lets you build flows, and Process Builder,
+                which lets you edit existing processes
+            </H1>
+
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Apex Programming" collapsible="true">
+            <H1>
+                Apex is a strongly typed, object-oriented programming language that allows developers to execute flow and transaction control
+                statements on the Lightning platform server in conjunction with calls to the Lightning Platform API. ...
+                Apex code can be initiated by Web service requests and from triggers on objects.
+            </H1>
+
+
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+
+</apex:form>
+
+</apex:page>

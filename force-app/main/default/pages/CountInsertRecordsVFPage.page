@@ -1,0 +1,29 @@
+<!-- Refer ContInsertRecords Apex file using DML Operation-->
+<apex:page controller="ContInsertRecords" >
+    <apex:form > <br/><br/>
+        <apex:commandButton value="Save" action="{!create}" /><br/><br/>
+       
+        
+        <apex:pageBlock title="Account Records">
+            <apex:pageBlockSection collapsible="true" columns="1">
+                <apex:inputField value="{!acc1.Name}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        
+        <apex:pageBlock title="Contact Records">
+            <apex:pageBlockSection collapsible="true" columns="2">
+                <apex:inputField value="{!con.FirstName}"/>
+                <apex:inputField value="{!con.LastName}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        
+        <apex:pageBlock title="Opportunity Records">
+            <apex:pageBlockSection collapsible="true" columns="3">
+                <apex:inputField value="{!Opp.Name}"/>
+                <apex:inputField value="{!Opp.CloseDate}"/>
+                <apex:inputField value="{!Opp.StageName}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        
+    </apex:form>
+</apex:page>

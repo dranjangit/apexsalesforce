@@ -1,0 +1,17 @@
+<apex:page standardController="Candidate__c" title="Candidate Details Page" sidebar="true">
+    <apex:form >
+    <apex:pageBlock title="Candidate Detail Form">
+
+        <apex:pageBlockSection title="Share the candidate Detail" columns="2">
+            <apex:inputField value="{!Candidate__c.Name}"/><br/>
+            <apex:inputField value="{!Candidate__c.Country__c}"/><br/>
+            <apex:inputField value="{!Candidate__c.Email_ID__c	}"/><br/>
+            <apex:inputField value="{!Candidate__c.Gender__c}"/><br/>
+            <apex:inputField value="{!Candidate__c.Phone_Number__c}"/><br/>
+            <apex:commandButton value="Save" action="{!Save}"/>
+            <apex:commandButton value="Cancel" action="{!Cancel}"/>
+        </apex:pageBlockSection>
+    
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,16 @@
+<apex:page standardController="Account" recordSetVar="acc" >
+    <apex:form >
+        <apex:selectList value="{!filterid}" size="3">
+            <apex:selectOptions value="{!listviewoptions}"></apex:selectOptions>
+           
+        </apex:selectList>
+<apex:commandButton value="Select the List" action="{!list}"/>
+        
+    </apex:form>
+
+</apex:page>
+
+<!-- <apex:selectList > builds a menu of available filter by getting the list from the !listviewoptions 
+when u choose a item from a list onChange event is fired by <apex:actionSupport> component
+
+Size = 1- Only one select option is visible in the list, 2 ....-->

@@ -1,0 +1,16 @@
+<apex:page standardController="Designation__c" title="Designation form" sidebar="false">
+    <apex:form >
+        <apex:pageBlock title="Insert the position record">
+        <apex:pageBlockSection title="Position Details" columns="2">
+            <apex:inputField value="{!Designation__c.Name}"/><br/>
+            <apex:inputField value="{!Designation__c.Job_Discription__c}"/><br/>
+            <apex:inputField value="{!Designation__c.Hiring_manager__c}"/><br/>
+            <apex:inputField value="{!Designation__c.Max_Pay__c}"/><br/>
+            <apex:inputField value="{!Designation__c.Min_Pay__c}"/><br/>
+            <apex:inputField value="{!Designation__c.Start_Date__c}"/><br/>
+            <apex:commandButton value="Save Details" action="{!Save}"/>
+           <apex:commandButton value="Cancel" action="{!Cancel}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

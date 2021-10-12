@@ -1,0 +1,10 @@
+<apex:page controller="CustContDemo2" sidebar="false" >
+    <apex:form >
+    <apex:outputLabel >Enter your Name : </apex:outputLabel>
+        <apex:inputText value="{!Name}"/> <br/><br/>
+        <apex:commandButton value="Click Here" reRender="one"/> <br/><br/>
+        <div>
+            <apex:outputLabel id="one"> Hello your Name is {!Name} </apex:outputLabel>
+        </div>
+    </apex:form>  
+</apex:page>

@@ -1,0 +1,3 @@
+<apex:page standardController="Job_Application__c" title="Job application details view">
+    <apex:relatedList list="Job_Applications__r"/>
+</apex:page>

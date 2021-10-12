@@ -1,0 +1,8 @@
+<apex:page controller="CalculatorContDemo6">
+    <apex:form ><br/><br/>
+        <apex:pageBlock ><br/><br/>
+        <apex:pageBlockSection >
+        </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

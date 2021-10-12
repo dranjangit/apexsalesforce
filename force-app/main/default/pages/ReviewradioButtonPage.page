@@ -1,0 +1,45 @@
+<apex:page standardController="Review__c" title="Entering Review Details ">
+    <apex:form >
+    	<apex:pageBlock title="Review Page">
+        <apex:pageBlockButtons location="Top">
+            <apex:commandButton value="Save" action="{!Save}"></apex:commandButton>
+            <apex:commandButton value="SavetoDatabase" action="{!QuickSave}"></apex:commandButton>
+            <apex:commandButton value="Cancel" action="{!Cancel}"/>
+        </apex:pageBlockButtons>
+        
+            <apex:pageBlockSection title="Job Application Score Details">
+                <apex:inputField value="{!Review__c.Applicantions__c}"/><br/>
+                <apex:inputField value="{!Review__c.Interviewer_Name__c	}"/><br/>
+                
+                <!-----Cultural Fit Review---->
+			<apex:selectRadio value="{!Review__c.Cultural_Fit__c}">
+           	<apex:selectOption itemLabel="Excellent" itemValue="10"></apex:selectOption>
+            <apex:selectOption itemLabel="Very Good" itemValue="9"></apex:selectOption>   
+            <apex:selectOption itemLabel="Good" itemValue="8"></apex:selectOption>
+            <apex:selectOption itemLabel="Fair" itemValue="7"></apex:selectOption>
+            <apex:selectOption itemLabel="Poor" itemValue="5"></apex:selectOption>
+            </apex:selectRadio>                
+            
+                   <!-----Experience Review---->
+                <apex:selectRadio value="{!Review__c.Experience__c}">
+           	<apex:selectOption itemLabel="Excellent" itemValue="10"></apex:selectOption>
+            <apex:selectOption itemLabel="Very Good" itemValue="9"></apex:selectOption>   
+            <apex:selectOption itemLabel="Good" itemValue="8"></apex:selectOption>
+            <apex:selectOption itemLabel="Fair" itemValue="7"></apex:selectOption>
+            <apex:selectOption itemLabel="Poor" itemValue="5"></apex:selectOption>
+            </apex:selectRadio> 
+                
+                   <!-----LeaderShip Skills---->
+                <apex:selectRadio value="{!Review__c.Leadership_Skills__c}">
+           	<apex:selectOption itemLabel="Excellent" itemValue="10"></apex:selectOption>
+            <apex:selectOption itemLabel="Very Good" itemValue="9"></apex:selectOption>   
+            <apex:selectOption itemLabel="Good" itemValue="8"></apex:selectOption>
+            <apex:selectOption itemLabel="Fair" itemValue="7"></apex:selectOption>
+            <apex:selectOption itemLabel="Poor" itemValue="5"></apex:selectOption>
+            </apex:selectRadio> 
+            </apex:pageBlockSection>
+        
+        </apex:pageBlock>
+    
+    </apex:form>
+</apex:page>

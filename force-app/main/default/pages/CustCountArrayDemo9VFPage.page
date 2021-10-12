@@ -1,0 +1,12 @@
+<apex:page controller="CustContArrayDemo9">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:outputLabel >Organization Name: {! OrgName} </apex:outputLabel>
+        <apex:pageBlockTable value="{!locations}" var="a">
+        <apex:column value="{!a}"/>
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    
+    
+    </apex:form>
+</apex:page>

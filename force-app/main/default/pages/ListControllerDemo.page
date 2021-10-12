@@ -1,0 +1,15 @@
+<!--Activity 78: with above scenario the records which are retrieved by the list controller..
+Pls display the records in PDF format..**************
+-->
+<apex:page standardController="Opportunity" recordSetVar="Opps" tabStyle="Opportunity" showHeader="false" renderAs="PDF">
+    <apex:pageBlock title="List of Opp Records in a PDF format">
+        <apex:pageBlockTable value="{!Opps}" var="op">
+            <apex:column value="{!op.Name}"/>
+            <apex:column value="{!op.AccountId}"/>
+            <apex:column value="{!op.Amount}"/>
+        
+        </apex:pageBlockTable>
+       
+    </apex:pageBlock>
+    
+</apex:page>

@@ -1,0 +1,12 @@
+<!-- Refer CustContDemo4Examp Class-->
+<apex:page controller="CustContDemo4"  >
+    <apex:form > <br/><br/>
+        <apex:outputLabel >Enter your Name : </apex:outputLabel><br/><br/>
+        <apex:inputText value="{!EmpName}"/> <br/><br/>
+        <apex:commandButton value="Click Here" reRender="one" action="{!printName}"/><br/><br/>
+        
+        <apex:outputLabel id="one"> {!EmpName} </apex:outputLabel>
+                         
+    
+    </apex:form>
+</apex:page>

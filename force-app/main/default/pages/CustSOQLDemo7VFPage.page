@@ -1,0 +1,17 @@
+<apex:page controller="CustSOQLDemo7" lightningStylesheets="true" docType="html-5.0" title="Fetching 10 Account Records">
+  <apex:form >
+   
+    <!--<apex:dataList value="{!acc}" var="a">
+        <apex:outputText value="{!a.Name}"></apex:outputText>
+    </apex:dataList>-->
+    <apex:pageBlock >
+        <apex:pageBlockButtons >
+        <apex:commandButton value="Click Here" action="{!getAccounts}"/>
+                </apex:pageBlockButtons>
+    <!--<apex:pageBlockTable title="Account Details" value="{!acc}" var="a">
+    <apex:column value="{!a.Name}"/>
+       
+    </apex:pageBlockTable>-->
+    </apex:pageBlock>
+     </apex:form>
+</apex:page>

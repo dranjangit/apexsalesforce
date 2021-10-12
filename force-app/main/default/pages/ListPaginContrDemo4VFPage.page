@@ -1,0 +1,16 @@
+<apex:page standardController="Opportunity" recordSetVar="opps" >
+    <apex:pageBlock title="Viewing Opportunities with Pagination">
+        <apex:form id="thisForm">
+            <apex:pageBlockSection >
+                <apex:dataList var="a" value="{!opps}" rows="10">
+                    {!a.Name}
+                    {!a.Amount}  
+                </apex:dataList>
+            </apex:pageBlockSection>
+            <apex:panelGrid columns="2">
+                <apex:commandLink action="{!Previous}"> Previous  </apex:commandLink>
+                <apex:commandLink action="{!Next}"> Next </apex:commandLink>
+            </apex:panelGrid>
+        </apex:form>
+    </apex:pageBlock>
+</apex:page>

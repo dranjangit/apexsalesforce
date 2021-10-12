@@ -1,0 +1,10 @@
+<apex:page controller="ContCustArrayAccountsArray" >
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockTable title="Account Details" value="{!myVal}" var="a">
+        	<apex:column value="{!a.Name}"/>
+            <apex:column value="{!a.Industry}"/>
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
