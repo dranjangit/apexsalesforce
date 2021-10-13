@@ -1,0 +1,20 @@
+<apex:page standardController="Candidate__c" extensions="CandidateExtCont" Title="Inserting Candidate Records" >
+<apex:form ><br/><br/>
+<apex:PageBlock title="Candidate Records">
+<apex:PageMessage summary="This is Summary of Candidate" detail="details" strength="4" severity="warning"></apex:PageMessage>
+<apex:PageBlockSection columns="1" collapsible="false">
+<apex:panelGrid columns="2" border="1" bgcolor="green">
+                    <apex:outputLabel >Candidate Name: </apex:outputLabel>
+                    <apex:inputText value="{!Candidate__c.Name}"></apex:inputText>
+                    <apex:outputLabel >Candidate Gender: </apex:outputLabel>
+                    <apex:inputText value="{!Candidate__c.Gender__c}"></apex:inputText>
+                    <apex:outputLabel >Candidate Province: </apex:outputLabel>
+                    <apex:inputText value="{!Candidate__c.State_Province__c	}"></apex:inputText>
+                </apex:panelGrid>
+                </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+            <apex:commandButton value="Save the Record" action="{!mySave}"/>
+            </apex:pageBlockButtons>
+</apex:PageBlock>
+</apex:form>
+ </apex:page>

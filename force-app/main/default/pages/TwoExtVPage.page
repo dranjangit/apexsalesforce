@@ -1,0 +1,7 @@
+<apex:page standardController="Account" extensions="ExtOne, ExtDecond" >
+<apex:form >
+<apex:outputText value="{!Food}"></apex:outputText><br/>
+<apex:outputText value="{!Food1}"></apex:outputText><br/>
+</apex:form>
+
+</apex:page>

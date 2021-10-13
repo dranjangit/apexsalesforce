@@ -1,0 +1,13 @@
+<!-- VFPage with Standard Controller & extending the Extension Controller...-->
+<apex:page standardController="Account" extensions="ExtensionAccount">
+   
+        <p>
+            {!Greetings} 
+        </p>
+    	 <apex:form > <br/><br/>
+             <apex:inputField value="{!Account.Name}"/> <br/><br/>
+             <apex:commandButton value="Save" action="{!Save}"/><br/>
+      </apex:form>
+</apex:page>
+
+<!-- {!Greetings} expression referencing the getGreetings() in extension Controller-->
