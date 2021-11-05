@@ -1,0 +1,10 @@
+<aura:component >
+	<aura:attribute name="Welcome"
+                    type="String"
+                    default="Birla Soft"/><br/>
+    {!v.Welcome}<p> Hello Team ...Just Created a Calculator </p><br/> 
+    <!-- View Port or Value Provid
+    Welcome to Component Framework hook” to access the 
+component’s message attribute, and it’s how you access all of a component’s attributes-->
+
+</aura:component>

@@ -1,0 +1,21 @@
+<aura:component >
+	<aura:attribute name="ChangeMe" 
+                    type="Boolean"
+                    default="false"/>
+    
+    <br/>
+    <br/>
+    <br/>
+    
+    <aura:if isTrue ="{!v.ChangeMe}">
+        <ui:Button label="I am MSK"/>
+        <aura:set attribute="else">
+        <ui:Button label="I am MSD"/>
+        </aura:set>
+    </aura:if>
+</aura:component>
+
+<!-- if the ChangeMe variable value is True then I am displaying button as "I am MSK"
+else I am displaying button I am MSD"
+<ui:button> i used to create button in Lighting components
+-->

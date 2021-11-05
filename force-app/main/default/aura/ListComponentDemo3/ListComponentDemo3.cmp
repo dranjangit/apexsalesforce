@@ -1,0 +1,9 @@
+<aura:component >
+	<ol>
+    	<li> Bombay </li>
+        <li> Chennai </li>
+        <li> Hyderabad </li>
+        <li> Delhi </li>
+      
+    </ol>
+</aura:component>

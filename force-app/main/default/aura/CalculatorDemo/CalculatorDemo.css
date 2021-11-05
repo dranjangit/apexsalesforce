@@ -1,0 +1,11 @@
+.THIS.myStyle
+{
+    text-align:Center;
+    color:Blue;
+    border: 5Px Red Solid;
+    Width:20%       
+    
+}
+
+/*<!-- .myStyle is a selector which can be refered by using <div>tag inside component-->
+*/

@@ -1,0 +1,25 @@
+<aura:component controller="HelperBrilaOppController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,
+forceCommunity:availableForAllPageTypes" access="global"> <!-- Brill Opp is an Apex Class or Controller-->
+<aura:attribute name="opplist" type="List"/> <!-- List Opportunity-->
+<lightning:button label="Get All Ops" onclick="{!c.getAllOps}"/><!-- Get Opps Event-->
+    <table>
+            <head>
+<tr>
+<th>Name</th>
+<th>Amount</th>
+
+</tr>
+
+            </head>
+<body>
+    <aura:iteration items="{!v.opplist}" var="opp"> <!-- Iteratig the records-->
+    <tr>
+<td>{!opp.Name</td> <!-- Displayng the name of Opp Records-->
+    <td>{opp.Amount></td><!-- Displayng the Amountof Opp Records-->
+
+    </tr>
+        </aura:iteration>
+
+    </body>
+
+</aura:component>

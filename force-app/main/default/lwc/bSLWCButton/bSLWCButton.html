@@ -1,0 +1,43 @@
+<template>
+    <div class="slds-var-m-top_small slds-var-m-bottom_medium">
+        <h2>class="slds-text-heading_small slds-m-bottom_small">
+        Click the buttons to Activate the <code>OnClick</code> handler and view the label of the Clicked
+        Button.</h2>
+   
+    <lightning-button variant="base" label="Base Button" title="Looks like a link"
+    onclick={handleClick} class="slds-var-m-left_x-small"></lightning-button> <br/>
+
+    <lightning-button variant="Neutral" label="Nuetral Button" title="Non Primary Action"
+    onclick={handleClick} class="slds-var-m-left_x-small"></lightning-button> <br/>
+
+    <!--Identifies the primary action in a group of buttons-->
+    <lightning-button variant="brand" label="Brand Button" title=" Primary Action"
+    onclick={handleClick} class="slds-var-m-left_x-small"></lightning-button> <br/>
+
+    <!-- Brand Outline variant : identifies the primary action in a group of buttons but has
+    a lighter look-->
+    <lightning-button variant="brand-outline" label="Brand Outline Button" title="Primary Action with lighter look"
+    onclick={handleClick} class="slds-var-m-left_x-small"></lightning-button><br/>
+
+        <!-- Brand Outline variant : identifies as a potential negative action but has alighter look  a lighter look-->
+    <lightning-button variant="destructive" label="Desctructive Button" title="Negative Action with lighter look"
+    onclick={handleClick} class="slds-var-m-left_x-small"></lightning-button><br/>
+
+    <!-- Brand Outline variant : identifies the primary action in a group of buttons but has
+    a lighter look-->
+    <lightning-button variant="desctructive-text" label="Destructive text Button" title="Desctructive Action with lighter look"
+    onclick={handleClick} class="slds-var-m-left_x-small"></lightning-button><br/>
+
+    <!-- Brand Outline variant : identifies the primary action in a group of buttons but has
+    a lighter look-->
+    <lightning-button variant="success" label="Success Button" title="Success action"
+    onclick={handleClick} class="slds-var-m-left_x-small"></lightning-button><br/>
+
+</div>
+<div class="slds-var-m-vertical_medium">
+    <p>The label of the button was clicked is : <span class="slds-text-heading_small">
+        {clickedButtonLabel}
+    </span></p>
+</div>
+  
+</template>

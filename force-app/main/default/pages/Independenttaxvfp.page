@@ -1,0 +1,27 @@
+<apex:page controller="IndependentHouse" sidebar="false" >
+    <apex:form >
+        <apex:pageBlock title="Triple Storage Independent House Property Tax" >
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >Approval Permission: {!Approval_Permission} &nbsp;sqft</apex:pageBlockSectionItem> 
+                <apex:pageBlockSectionItem >Acutal build :{!Built_In_Sqft}&nbsp;sqft</apex:pageBlockSectionItem> 
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:commandButton value="Calculate Tax" action="{!calculatetax}"/> 
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="2">
+                <apex:outputLabel > You have Permission to build {!Approval_Permission} &nbsp;sqft But You Build {!Built_In_Sqft}&nbsp;sqft 
+                    So There are charges and Penalties as per following
+                </apex:outputLabel>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection >
+                Total Building Cost:{!Cost_Building}&nbsp;   <br/>
+                Excess Build area in Percentage:{!deviation_in_percentage}&nbsp; &#37;<br/> 
+                Library Cess :{!Library_Cess}<br/> 
+                Total Property Tax cost :{!Total_Cost_with_Penalty_Cost_Library}<br/> 
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,28 @@
+<apex:page controller="ComercialTax" sidebar="false" >
+    <apex:form >
+        <apex:pageBlock title=" 5 Storage Commercial Property Class " >
+            <apex:pageBlockSection >
+                  <apex:pageBlockSectionItem >Acutal build :{!Built_In_Sqft}&nbsp;sqft</apex:pageBlockSectionItem> 
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:commandButton value="Calculate Tax" action="{!calculatetax}"/> 
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="2">
+                <apex:outputLabel > You Build {!No_of_slab}&nbsp; Storage commercial Property 
+                    So There are charges and Penalties as per extra Slab are mentioned below
+                </apex:outputLabel>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection >
+                Cost of Built: {!Cost_of_Built}&nbsp;  <br/>
+                Total Cost for SqYards: {!Total_Cost_for_SqYards} &nbsp;   <br/>
+                Total Building Cost:{!Cost_Building}&nbsp;   <br/>
+                Penalty Cost:{!Penalty_Cost}&nbsp;<br/> 
+                Library Cess :{!Library_Cess}<br/> 
+                Total Property Tax cost :{!Total_Cost_with_Penalty_Cost_Library}<br/> 
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

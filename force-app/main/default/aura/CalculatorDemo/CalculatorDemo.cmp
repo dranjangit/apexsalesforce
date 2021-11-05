@@ -1,0 +1,19 @@
+<aura:component >
+    <br/> <br/>
+	<aura:attribute name="number1"
+                    type="Integer"
+                    default="30"/>
+    
+    <aura:attribute name="number2"
+                    type="Integer"
+                    default="100"/> <!-- if you don't pass any values in the Name attribute the 
+									value in the default attribute is considered for calculation-->
+   
+    <img src="{!$Resource.MyCalculatorImage}" width="100" height="100" alt="My Calculator"/>
+    <div class="myStyle">
+ Addition :   {!v.number1 + v.number2} <br/><br/>
+  Substraction  : {!v.number1 - v.number2} <br/><br/>
+  Multiplication :  {!v.number1 * v.number2} <br/><br/>
+    Division : {!v.number1 / v.number2} <br/><br/>    
+    </div>
+</aura:component>

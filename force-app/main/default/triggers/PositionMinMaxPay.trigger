@@ -1,4 +1,4 @@
-trigger PositionMinMaxPay on Designation__c	 (before insert,before update) 
+trigger PositionMinMaxPay on Designation__c  (before insert,before update) 
 {
     for(Designation__c P:Trigger.New)
     {

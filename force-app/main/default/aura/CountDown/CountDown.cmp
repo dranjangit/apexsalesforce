@@ -1,0 +1,16 @@
+<aura:component extensible="true">
+    <aura:attribute name="minutes" type="Integer"/>
+    <aura:attribute name="countDownminutes" type="Integer" default="10"/>
+    <aura:attribute name="countDownSecound" type="Integer" default="0"/>
+    <lightning:card title="">
+        <lightning:layout multipleRows="true">
+            
+            <lightning:layoutItem size="12" padding="around-small">
+            <div class="slds-align_absolute-center" style="background-color: cyan; font-size:50px; color:crimson">
+               {!v.countDownminutes} MINUTES: {!v.countDownSecound} SECOUND
+            </div>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </lightning:card>
+	
+</aura:component>

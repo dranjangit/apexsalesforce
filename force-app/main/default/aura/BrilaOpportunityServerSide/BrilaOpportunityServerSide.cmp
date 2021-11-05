@@ -1,0 +1,8 @@
+<aura:component controller="BrillOpp"> <!-- Brill Opp is an Apex Class or Controller-->
+<aura:attribute name="opplistatr" type="Opportunity[]"/> <!-- List Opportunity-->
+    <ui:button label="Get Opportunities" press="{!c.getOpps}"/> <!-- Get Opps Event-->
+    <aura:iteration var="opt" items="{!v.opplistatr}"> <!-- Iteratig the records-->
+    <br/>
+    {!opt.Name} <br/> <!-- Displayng the name of Opp Records-->
+        </aura:iteration>
+</aura:component>

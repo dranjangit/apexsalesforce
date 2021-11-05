@@ -1,0 +1,35 @@
+<aura:component >
+    <br/> <br/>
+	<aura:attribute name="number1"
+                    type="Integer"
+                   />
+    
+    <aura:attribute name="number2"
+                    type="Integer"
+                    /> <!-- if you don't pass any values in the Name attribute the 
+									value in the default attribute is considered for calculation-->
+   <aura:attribute name="result"
+                   type="Integer"/>
+    <img src="{!$Resource.MyCalculator}" width="100" height="100" alt="My Calculator"/>
+    <br/>
+    <br/>
+    
+    <div class="myStyle">
+        
+        <lightning:input label="First Number" value="{!v.number1}" name="fn"/> <br/><br/>
+        <lightning:input label="Second Number" value="{!v.number2}" name="sn"/> <br/><br/>
+        
+        <div class="myColor">
+        Result is  : {!v.result} <br/><br/>
+        </div>
+        
+        
+        <lightning:button label="Addition"
+                          variant="brand"
+                          onclick="{!c.addition}"/>
+        
+        <lightning:button label="Multiplication"
+                          variant="Success"
+                          onclick="{!c.multiply}"/>
+    </div>
+</aura:component>
